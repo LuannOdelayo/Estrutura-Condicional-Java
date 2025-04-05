@@ -1,0 +1,24 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ex1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        Locale.setDefault(Locale.US);
+
+        double sem1 = sc.nextDouble();
+        double sem2 = sc.nextDouble();
+        double media = (sem1 + sem2) / 2;
+
+        System.out.printf("Sua nota final é %.1f%n", media);
+
+        if (media < 60.00) {
+            System.out.println("Reprovado");
+        }
+        else {
+            System.out.println("Aprovado");
+        }
+
+        sc.close();
+    }
+}
